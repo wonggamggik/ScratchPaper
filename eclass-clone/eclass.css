@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerPart {
+  display: inline-block;
+}
+
+.topPart {
+  background-image: url("./assets/images/header-background.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+}
+
+.sideListItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5b5c5f;
+  border: solid black;
+  border-width: 0 0 0.1rem 0;
+  color: #ebebeb;
+  padding: 10px;
+}
+
+.sidebar {
+  width: 200px;
+  background: #e3e4e9;
+}
+
+#toggleMenu {
+  padding: 8px;
+  background: linear-gradient(#ffffff, #dadada);
+}
+
+#toggleTemp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0 3px 0 3px;
+  background: #f0f0f0;
+  height: 20px;
+}
+
+ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+#sideMyWork {
+  display: flex;
+}
+
+#myWorkCount {
+  margin: 1rem 0 1rem 10px;
+  background-color: red;
+  border: 0.3rem solid;
+  border-color: white;
+}
+
+.content {
+  width: 1000px;
+}
+
+#contentMenu {
+  padding: 8px;
+  background: linear-gradient(#ffffff, #dadada);
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contentTemp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  padding: 0 3px 0 3px;
+  height: 20px;
+  width: 15%;
+}
+
+.contentTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#learningInform {
+  font-size: 2rem;
+}
+
+table.pageLink {
+  border-collapse: collapse;
+  height: 3rem;
+}
+
+.pageLink td {
+  border: 1px solid gray;
+}

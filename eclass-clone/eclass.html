@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="eclass.css">
+  <script src="https://kit.fontawesome.com/784dd5315a.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="">
+      <div class="headerPart verticalAlign">
+        <i class="fa-solid fa-house"></i>
+        <p>홈으로</p>
+      </div>
+      <div class="headerPart verticalAlign">
+        <i class="fa-solid fa-user"></i>
+        <p>마이페이지</p>
+      </div>
+    </div>
+    <div>
+      <div class="headerPart">
+        <i class="fa-solid fa-envelope"></i>
+        <p>쪽지</p>
+        <p>0</p>
+      </div>
+      <div class="headerPart verticalAlign">
+        <p>주인공</p>
+        <div>
+          <button>대표권한설정</button>
+          <button>로그아웃</button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- 메인 수업 정보 -->
+  <div class="topPart">
+    <!-- 수업 이름 -->
+    <p class="classTitle">종합설계</p>
+    <!-- 수업 정보 -->
+    <div class="classInform">
+      <table>
+        <tr>
+          <th>이수구분</th>
+          <th>학점</th>
+          <th>공동교수정보</th>
+        </tr>
+        <tr>
+          <td>전공</td>
+          <td>3.0학점</td>
+          <td><button>조회하기</button></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>대표교수</th>
+          <th>[이메일 아이콘]이메일</th>
+        </tr>
+        <tr>
+          <td>홍길동</td>
+          <td>hongildong@gildong.com</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- 메인 수업 내용 -->
+  <div class="main">
+
+    <!-- 사이드바 -->
+    <aside class="sidebar">
+      <div id="toggleMenu">
+        <div id="toggleTemp">
+          <p>토글 메뉴</p> <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+      <div>
+        <ol>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-note-sticky"></i> 학습 목차</div> <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-book"></i> 학습 정보 </div> <i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-book-bookmark"></i> 학습 활동 관리 </div><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-book-bookmark"></i> 학습 활동 </div><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-address-book"></i> 학습 현황 </div><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-circle-info"></i> 과목 정보 </div><i class="fa-solid fa-chevron-down"></i>
+          </li>
+          <li class="sideListItem">
+            <div><i class="fa-solid fa-note-sticky"></i> 성적 </div><i class="fa-solid fa-chevron-down"></i>
+          </li>
+        </ol>
+      </div>
+      <div id="sideMyWork">
+        <p>내 할 일 보기</p>
+        <p id="myWorkCount">0</p>
+      </div>
+    </aside>
+    <!-- 메인 정보 -->
+    <div class="content">
+      <div id="contentMenu">
+        <button id="contentTemp">
+          <i class="fa-solid fa-desktop"></i>
+          <p>강의 계획서</p>
+        </button>
+      </div>
+
+      <!-- 제목 메인 정보 -->
+      <div class="contentTitle">
+        <p id="learningInform">학습 정보</p>
+        <table class="pageLink">
+          <tr>
+            <td>
+              <i class="fa-solid fa-house"></i>
+            </td>
+            <td>
+              강의실
+            </td>
+            <td>
+              >
+            </td>
+            <td>
+              종합설계2
+            </td>
+            <td>
+              >
+            </td>
+            <td>
+              학습 정보
+            </td>
+            <td>
+              >
+            </td>
+            <td>
+              공지사항
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- 섹션 변경 버튼 -->
+      <div>
+        <div>
+          공지사항
+        </div>
+        <div>
+          질의응답
+        </div>
+      </div>
+      <!-- 메인 내용 -->
+      <div>
+        <div>
+          메인 내용
+        </div>
+        <div>
+          <img src="assets/images/user.png">
+          <button>[체크]등록</button>
+        </div>
+        <div>
+          <input type="text">
+        </div>
+      </div>
+      <!-- 이전 목록 표 -->
+      <div>
+        <table>
+          <tr>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+          </tr>
+          <tr>
+            <td>제목1</td>
+            <td>홍길동</td>
+            <td>2000-01-01</td>
+          </tr>
+          <tr>
+            <td>제목2</td>
+            <td>홍길동</td>
+            <td>2000-01-01</td>
+          </tr>
+          <tr>
+            <td>제목3</td>
+            <td>홍길동</td>
+            <td>2000-01-01</td>
+          </tr>
+          <tr>
+            <td>제목4</td>
+            <td>홍길동</td>
+            <td>2000-01-01</td>
+          </tr>
+          <tr>
+            <td>제목5</td>
+            <td>홍길동</td>
+            <td>2000-01-01</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- 푸터 -->
+  <footer>
+    <img src="assets/images/dongguk-logo-1.png">
+    <p>서울캠퍼스 : (04620) 서울특별시 중구 필동로 1길 30 (필동3가 26) Tel.02-2260-3114 Fax.02-2277-1274</p>
+    <p>경주캠퍼스 : (38066) 경상북도 경주시 동대로 123 동국대학교 경주캠퍼스, Tel.054-770-2114, Fax.054-770-2001</p>
+    <p>COPYRIGHT © 2017 DONGGUK UNIVERSITY SINCE 1906. ALL RIGHTS RESERVED.</p>
+  </footer>
+</body>
+
+</html>
