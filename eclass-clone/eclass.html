@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="eclass.css" />
-    <script
-      src="https://kit.fontawesome.com/784dd5315a.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
-  </head>
 
-  <body>
-    <!-- 헤더 -->
-    <header class="header">
-      <div class="">
-        <div class="headerPart verticalAlign">
-          <i class="fa-solid fa-house"></i>
-          <p>홈으로</p>
-        </div>
-        <div class="headerPart verticalAlign">
-          <i class="fa-solid fa-user"></i>
-          <p>마이페이지</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="eclass.css" />
+  <script src="https://kit.fontawesome.com/784dd5315a.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="">
+      <div class="headerPart verticalAlign">
+        <i class="fa-solid fa-house"></i>
+        <p>홈으로</p>
+      </div>
+      <div class="headerPart verticalAlign">
+        <i class="fa-solid fa-user"></i>
+        <p>마이페이지</p>
+      </div>
+    </div>
+    <div>
+      <div class="headerPart">
+        <i class="fa-solid fa-envelope"></i>
+        <p>쪽지</p>
+        <p>0</p>
+      </div>
+      <div class="headerPart verticalAlign">
+        <p>주인공</p>
+        <div>
+          <button>대표권한설정</button>
+          <button>로그아웃</button>
         </div>
       </div>
-      <div>
-        <div class="headerPart">
-          <i class="fa-solid fa-envelope"></i>
-          <p>쪽지</p>
-          <p>0</p>
-        </div>
-        <div class="headerPart verticalAlign">
-          <p>주인공</p>
-          <div>
-            <button>대표권한설정</button>
-            <button>로그아웃</button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- 메인 수업 정보 -->
+    </div>
+  </header>
+  <!-- 메인 수업 정보 -->
+  <div class="wrapper">
     <div class="topPart">
       <!-- 수업 이름 -->
-      <p class="classTitle">종합설계</p>
+      <h1 class="classTitle">종합설계</h1>
       <!-- 수업 정보 -->
       <div class="classInform">
-        <table>
-          <tr>
-            <th>이수구분</th>
-            <th>학점</th>
-            <th>공동교수정보</th>
-          </tr>
-          <tr>
-            <td>전공</td>
-            <td>3.0학점</td>
-            <td><button>조회하기</button></td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <th>대표교수</th>
-            <th>[이메일 아이콘]이메일</th>
-          </tr>
-          <tr>
-            <td>홍길동</td>
-            <td>hongildong@gildong.com</td>
-          </tr>
-        </table>
+        <div class="classInform-class-div">
+          <table class="classInform-class-table">
+            <tr>
+              <th>
+                이수구분
+              </th>
+              <th>
+                학점
+              </th>
+              <th>
+                공동교수정보
+              </th>
+            </tr>
+            <tr>
+              <td>
+                전공
+              </td>
+              <td>
+                3.0학점
+              </td>
+              <td><button>
+                  조회하기
+                </button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="classInform-professor-div">
+          <table class="classInform-professor-table">
+            <tr>
+              <th>대표교수</th>
+              <th><i class="fa-solid fa-envelope"></i> 이메일</th>
+            </tr>
+            <tr>
+              <td>홍길동</td>
+              <td>hongildong@gildong.com</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <!-- 메인 수업 내용 -->
@@ -122,6 +137,7 @@
       <div class="content">
         <div id="contentMenu">
           <button id="contentTemp">
+            <i class="fa-solid fa-desktop" style="color: #74C0FC;"></i>
             <p>강의 계획서</p>
           </button>
         </div>
@@ -130,59 +146,79 @@
         <div class="body-main-make-margin">
           <div class="contentTitle">
             <p id="learningInform">학습 정보</p>
-            <table class="pageLink">
-              <tr>
-                <td>
-                  <i class="fa-solid fa-house"></i>
-                </td>
-                <td>강의실</td>
-                <td>></td>
-                <td>종합설계2</td>
-                <td>></td>
-                <td>학습 정보</td>
-                <td>></td>
-                <td>공지사항</td>
-              </tr>
-            </table>
+            <div class="body-main-make-margin-table">
+              <table class="pageLink">
+                <tr>
+                  <td>
+                    <i class="fa-solid fa-house"></i>
+                  </td>
+                  <td>강의실</td>
+                  <td>></td>
+                  <td>종합설계2</td>
+                  <td>></td>
+                  <td>학습 정보</td>
+                  <td>></td>
+                  <td>공지사항</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <!-- 섹션 변경 버튼 -->
           <ul class="body-main-link-list">
-            <li class="body-main-link-button-choice">공지사항</li>
-            <li class="body-main-link-button-unchoice">질의응답</li>
+            <li class="body-main-link-button-choice">
+              <div>
+                <p>공지사항</p>
+              </div>
+            </li>
+            <li class="body-main-link-button-unchoice">
+              <div>
+                <p>질의응답</p>
+              </div>
+            </li>
+            <li class="body-main-link-button-empty"></li>
           </ul>
           <!-- 메인 내용 -->
           <div class="body-main-content">
-            <div class="body-main-content-top">
-              <div class="body-main-content-top-left">
-                <i class="fa-solid fa-building-columns"></i>
-                <p>2학기에 진행되는 학술 대회 목록</p>
+            <div class="body-main-content-top-table-row">
+              <div class="body-main-content-top-flex">
+                <div class="body-main-content-top-left">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <p>2학기에 진행되는 학술 대회 목록</p>
+                </div>
+                <div class="body-main-content-top-right">
+                  <button><i class="fa-solid fa-address-book"></i>목록</button>
+                  <button>
+                    <i class="fa-solid fa-sheet-plastic"></i>학습 목차
+                  </button>
+                </div>
               </div>
-              <div class="body-main-content-top-right">
-                <button><i class="fa-solid fa-address-book"></i>목록</button>
-                <button>
-                  <i class="fa-solid fa-sheet-plastic"></i>학습 목차
-                </button>
+
+            </div>
+            <div class="body-main-content-middle-table-row">
+              <div>
+                <p>작성자 : 김교수</p>
+                <p>작성일 : 2024-09-09 19:31:16</p>
+                <p>조회수 : 39</p>
               </div>
             </div>
-            <div class="body-main-content-middle">
-              <p>작성자 : 김교수</p>
-              <p>작성일 : 2024-09-09 19:31:16</p>
-              <p>조회수 : 39</p>
-            </div>
-            <div class="body-main-content-main">
-              한국지능시스템학회
-              <br />■ 주요일정 <br />· 요약문 제출마감:2024년 10월 27일 <br />·
-              최종논문 제출마감: 2024년 11월 17일 <br />· 사전등록 마감 : 2024년
-              11월 22일
-            </div>
-            <div class="body-main-content-bottom">
-              <div class="body-main-content-bottom-button">
-                <img src="assets/images/user.png" />
-                <button>
-                  <i class="fa-solid fa-check" style="color: #1100ff"></i>등록
-                </button>
+            <div class="body-main-content-main-table-row">
+              <div>
+                한국지능시스템학회
+                <br />■ 주요일정 <br />· 요약문 제출마감:2024년 10월 27일 <br />·
+                최종논문 제출마감: 2024년 11월 17일 <br />· 사전등록 마감 : 2024년
+                11월 22일
               </div>
-              <textarea class="body-main-content-bottom-input"></textarea>
+            </div>
+            <div class="body-main-content-bottom-table-row">
+              <div class="body-main-content-bottom-flex">
+                <div class="body-main-content-bottom-button">
+                  <img src="assets/images/user.png" />
+                  <button>
+                    <i class="fa-solid fa-check" style="color: #1100ff"></i>등록
+                  </button>
+                </div>
+                <textarea class="body-main-content-bottom-input"></textarea>
+              </div>
             </div>
           </div>
           <!-- 이전 목록 표 -->
@@ -194,37 +230,39 @@
                 <th class="body-main-content-table-date">작성일</th>
               </tr>
               <tr>
-                <td>제목1</td>
-                <td>홍길동</td>
-                <td>2000-01-01</td>
+                <td class="body-main-content-table-title-content">제목1</td>
+                <td class="body-main-content-table-writer-content">홍길동</td>
+                <td class="body-main-content-table-date-content">2000-01-01</td>
               </tr>
               <tr>
-                <td>제목2</td>
-                <td>홍길동</td>
-                <td>2000-01-01</td>
+                <td class="body-main-content-table-title-content">제목2</td>
+                <td class="body-main-content-table-writer-content">홍길동</td>
+                <td class="body-main-content-table-date-content">2000-01-02</td>
               </tr>
               <tr>
-                <td>제목3</td>
-                <td>홍길동</td>
-                <td>2000-01-01</td>
+                <td class="body-main-content-table-title-content-highlight">> 제목3</td>
+                <td class="body-main-content-table-writer-content-highlight">홍길동</td>
+                <td class="body-main-content-table-date-content-highlight">2000-01-03</td>
               </tr>
               <tr>
-                <td>제목4</td>
-                <td>홍길동</td>
-                <td>2000-01-01</td>
+                <td class="body-main-content-table-title-content">제목4</td>
+                <td class="body-main-content-table-writer-content">홍길동</td>
+                <td class="body-main-content-table-date-content">2000-01-04</td>
               </tr>
               <tr>
-                <td>제목5</td>
-                <td>홍길동</td>
-                <td>2000-01-01</td>
+                <td class="body-main-content-table-title-content">제목5</td>
+                <td class="body-main-content-table-writer-content">홍길동</td>
+                <td class="body-main-content-table-date-content">2000-01-05</td>
               </tr>
             </table>
           </div>
         </div>
       </div>
     </div>
-    <!-- 푸터 -->
-    <!-- <footer>
+  </div>
+
+  <!-- 푸터 -->
+  <!-- <footer>
       <img src="assets/images/dongguk-logo-1.png" />
       <p>
         서울캠퍼스 : (04620) 서울특별시 중구 필동로 1길 30 (필동3가 26)
@@ -238,5 +276,6 @@
         COPYRIGHT © 2017 DONGGUK UNIVERSITY SINCE 1906. ALL RIGHTS RESERVED.
       </p>
     </footer> -->
-  </body>
+</body>
+
 </html>
